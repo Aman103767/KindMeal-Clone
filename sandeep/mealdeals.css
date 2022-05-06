@@ -1,0 +1,240 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#bannerimage
+{
+  width:100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  /* border:1px solid rgb(208, 204, 204); */
+ 
+}
+#bannerbox
+{
+    width:82%;
+  margin:auto;
+  margin-top: 40px;;
+  
+}
+.container
+{
+    /* border:1px solid red; */
+    margin:auto;
+    width:82%;
+    margin-top: 25px;;
+    display:grid;
+    grid-template-rows: repeat(5,auto);
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    box-sizing: border-box;
+}
+
+.productImg
+{
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    
+   
+   
+
+}
+.productImg:hover
+{
+    transform: scale(1.1) ;
+    transition: 1s;
+}
+.container>div
+{
+    border-radius:20px;;
+    border:1px solid rgb(221, 220, 220);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+   
+}
+.databox
+{
+    width:100%;
+    /* border:1px solid green; */
+    box-sizing: border-box;
+    padding:15px 10px 15px 10px;
+   
+    
+}
+.discountbox
+{
+    
+    border-top:1px solid rgb(221, 220, 220);
+    background-color: rgb(245, 242, 242);
+    border-bottom-left-radius: 20px;;
+    border-bottom-right-radius: 20px;
+    display:flex;
+    flex-direction: row;
+    margin-top:auto;
+    
+}
+.discountbox>div:nth-child(1)
+{
+    border-right:1px solid rgb(221, 220, 220);  
+    box-sizing: border-box;
+    width:25%;
+    height:auto;
+    padding:10px 5px 15px 5px;
+    display:flex;
+    gap:5px;
+    justify-content: space-evenly;
+    align-items: center;   
+
+}
+.discountbox>div:nth-child(2)
+{
+   box-sizing: border-box;
+   flex-grow:1;
+   
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;;
+   
+   
+
+}
+.discountbox>div:nth-child(3)
+{
+    border-left:1px solid rgb(221, 220, 220);  
+    box-sizing: border-box;
+    width:25%;
+    height:100%;
+    
+    display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;;
+   
+    text-align:center;
+
+}
+.discountbox>div>img
+{
+   
+   width:28%;
+   flex:1;
+}
+
+
+
+.btn
+{
+    background-color:#EE1933;
+    padding:10px 30px 10px 30px;
+    border-radius: 5px;;
+    
+    border:0px;
+    font-size: 20px;;
+    color:white;
+}
+.btn:hover
+{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:red;
+}
+.pagenation
+{
+    display:flex;
+    
+    width:30%;
+    gap:5px;
+     justify-content: space-between; 
+    /* align-items: center;  */
+    margin:auto;
+    margin-top: 30px;;
+    background-color: rgb(232, 229, 229);;
+    /* padding:5px 5px 5px 5px; */
+    border-radius: 40px;
+
+}
+.previous ,.next
+{
+    
+    /* background-color: red; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+   
+
+}
+.pagenation >.pages
+{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.pagenation >*:hover
+{
+    background-color: white;
+    color:rgb(4, 55, 75);
+    cursor:pointer;
+}
+.productname
+{
+    /* border:1px solid red; */
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    font-size: 20px;
+    font-weight: bold;
+    position:absolute;
+   top:288px;
+   background-color: rgb(0, 0, 0,0.5);
+   
+  
+   color:white;
+}
+
+.discounttop
+{
+    background-color:rgb(255, 255, 255,0.83);
+    border-radius: 32.5px;;
+    width:65px;
+    height:65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    top:15px;
+    left:15px;
+    color:rgb(84, 82, 82);
+    
+
+}
+.pricebox
+{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    /* border:1px solid red; */
+    margin-top: 20px;
+    align-items: center;
+}
+.pricebox>h2
+{
+    color:#2874A6
+}
