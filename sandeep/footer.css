@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+}
+#lastImg{
+ width:100%;
+ margin-top: 140px;
+ background-color: #ececec;
+ margin-bottom: 0px;
+ height: auto;
+ 
+ 
+}
+
+#lastImg>img{
+ width: 70%;
+   height : auto; 
+   display: block;
+   margin:auto;
+
+}
+
+
+
+/* here we start the side text part */
+
+
+#forflex>div>h2,#forflex>div>h4{
+ font-weight: 200;
+}
+#forflex{
+   width: 100%;
+   height: auto;
+   display:flex;
+   justify-content: space-between;
+   
+}
+#forflex>div:first-child{
+   margin-left: 10px;
+   font-weight: 400;
+   font-size: 16px ;
+   cursor: pointer;
+   color: #666666;
+}
+#forflex>div{
+ 
+   display: flex;
+   align-items: center;
+       
+}
+#forflex>div:last-child>h4{
+ 
+  margin-right: 20px;
+  color:   #2184ff;;
+  font-size: 17.5px;
+}
+#forflex>div>#orange{
+ color: rgb(197, 157, 95);
+ 
+}
+table{
+ 
+ font-weight: normal;
+ color: #eeeeee;
+ font-size: 12px;
+ font-weight: 100;
+ line-height: 15px;
+}
+#table_container{
+  width:100%;
+   background-color: green;
+  
+ background-color: #2bb673;
+ min-height: 100px;
+ padding-top: 10px;
+ display: -webkit-box;
+ border: none;
+ display: block;
+ padding: 14px 0px 12px 0px
+}
+#table_container>div{
+   width: 63%;
+   margin: auto;
+ 
+}
+#left{
+   display: flex;
+   justify-content: flex-start;
+   font-weight: 600;
+   font-size: 14px;
+   color: #ffffff;
+}
+#card{
+ display: grid;
+ border: none;
+ grid-template-columns: repeat(5,1fr);
+ grid-template-rows: auto;
+ 
+}
+#card>div{
+ border: none;
+
+}
+.togetmargin{
+ margin-top: 17px;
+}
+#lastPara>p{
+ text-align: center;
+ font-size: 10px;
+ color: #eeeeee;
+ margin-top: 30px;
+    
+}
