@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Food Lover Signup Page</title>
-    <link rel="stylesheet" href="signup.css" />
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <title>  Restaurants Signup Page</title>
+    <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
   </head>
   <body>
-
-
-
 
     <div class="header">
       <div id="logo"><img src="https://www.kindmeal.my/images/logo-kindmeal.png"></div>
@@ -30,38 +27,30 @@
       </div>
   </div>
 
-   <nav class="navbar">
-      <div class="navbar-links">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Meal Deals</a></li>
-              <li><a href="#">Kind Moments</a></li>
-              <li><a href="#">Hot Picks</a></li>
-              <li><a href="#">Recipes</a></li>
-              <li><a href="#">Directory</a></li>
-              <li><a href="#">Articles</a></li>
-              <li><a href="#">Help</a></li>
-          </ul>
-
-      </div>
-   </nav>
+  <div id = "navbigcon">
+    <div id = "navcon">
+      <div><a href = "index.html">Home</a></div>
+      <div><a href="mealdeal.html">Meal Deals</a></div>
+      <div><a href="#">KindMoments</a></div>
+      <div><a href="#">Hot Picks</a></div>
+      <div><a href="#">Recipes</a></div>
+      <div><a href="map.html">Directory</a></div>
+      <div><a href="#">Articles</a></div>
+      <div><a href="help.html">Help</a></div>
+    </div>
+  </div>
 
 
-
-
-
-
-
-    <div id="container">
+   <div id="container">
       <div id="left_box">
         <div class="leftbox_innerbox">
           <img src="https://www.kindmeal.my/images/join_normal.png " alt="" />
-          <p> <a href="signup.html"> Food Lover Sign Up </a> </p>
+          <p><a href="signup.html"> Food Lover Sign Up </a></p>
         </div>
 
-        <div class="leftbox_innerbox" >
+        <div class="leftbox_innerbox">
           <img src=" https://www.kindmeal.my/images/join_shop.png " alt="" />
-          <p> <a href="rsignup.html"> Restaurants Sign Up </a></p>
+          <p><a href="rsignup.html"> Restaurants Sign Up </a></p>
         </div>
 
         <div class="box_3">
@@ -81,143 +70,163 @@
 
       <div id="right_box">
         <div id="info">
-          <h1>Food Lover? Sign Up Now or <a href=" https://www.facebook.com/"> Login With Facebook </a> </h1>
-          <br />
+          <h1> Restaurant / Shop Owner? Sign Up Now.</h1>
+          
 
-          <p style="font-size: 15px;">
-            Discover tasty meat-free meals and dine instantly — no coupon
-            payment, booking or printing is required.
+          <p>
+            Improve your business, build brand loyalty, and save precious animal lives! Join KindMeal now <br> to
+             enjoy the following features:
           </p>
-          <br />
+          <br/>
 
-          <p style="font-size: 15px;" >
-            KindMeal is a fun, exciting and cool new way for you to show your
-            compassion towards animals. We <br />
-            collaborate with kind restaurants and cafes across the nation to
-            bring you delicious meat-free foods that will <br />
-            not only help save precious animal lives, but improve your health
-            and save your money at the same time!
+          <ul class="ultag" >
+             <li> Effectively reach over 200,000 consumers</li>
+            <li>Feature your shop across premium partner platforms &amp; media channels</li>
+            <li>Offer coupons &amp; deals to attract new customers</li>
+            <li>Showcase your delicious meat-free meals</li>
+            <li>Interact with our community of food lovers</li>
+            <li>Get your exclusive Shop Page — <span style="color: red;"><font ><i>https://KindMeal.my/YourShopName</i></font></span> </li>
+            </ul>
+            <br>
+            
+            
+            <p style="font-size: 15px;">
+                 To support our welfare causes, we offer simple, affordable <a href="https://www.kindmeal.my/member/merchant.php?action=upgrade "> Premium  Plans</a> 
+            on a monthly <br> subscription basis, starting from RM 99 only. No deal commissions, 
+            no hidden fees. Premium <br> Plan details are available upon signing up.
           </p>
+          <br>
+          <br>
+          
+
+
+           <div id="owner"> 
+            <h2>Personal Profile </h2>  
+            <p>First, we setup your personal profile, then proceed to configure your shop promotions.</p>    
+
+        </div>
         </div>
 
         <div id="signup_part" > 
-            <form>
-           
-                <div id="name">
-                        
-                   <h3 class="name">Your Name</h3>
-    
-                   <label class="firstLabel">First Name</label><br>
-                   <input type="text" id="firstName" required >
-    
-    
-                   <label class="lastLabel">Last Name</label><br>
-                    <input type="text" id="lastName" required>
-                  </div>
+          <form>
+         
+              <div id="name">
+                      
+                 <h3 class="name">Your Name</h3>
+  
+                 <label class="firstLabel">First Name</label><br>
+                 <input type="text" id="firstName" required >
+  
+  
+                 <label class="lastLabel">Last Name</label><br>
+                  <input type="text" id="lastName" required>
+                </div>
+
+          <div id="name">
+            <h3 class="name"> Email </h3>
+             <input type="text" id="email" required >
+            </div>
 
             <div id="name">
-              <h3 class="name"> Email </h3>
-               <input type="email" id="email" required >
-              </div>
+             <h3 class="name" >Re-Enter Email: </h3>
+             <input type="text" id="re_email" required >
+            </div>
 
-              <div id="name">
-               <h3 class="name" >Re-Enter Email: </h3>
-               <input type="email" id="re_email" required >
-              </div>
+            <div id="name">
+             <h3 class="name" >Password</h3>
+             <input type="password"  id="password" required minlength="8" required>
+            </div>
 
-              <div id="name">
-               <h3 class="name" >Password</h3>
-               <input type="password" id="password" required>
-              </div>
+            <div id="name">
+             <h3 class="name" >Username</h3>
+             <input type="text" id="username" required>
+            </div> 
 
-              <div id="name">
-               <h3 class="name" >Username</h3>
-               <input type="text" id="username" required>
-              </div> 
+            <div id="name">
+             <h3 class="name">Birth-Date</h3>
+             <input id="date"  required type="date">
+            </div>
 
-              <div id="name">
-               <h3 class="name">Birth-Date</h3>
-               <input id="date"  required type="date">
-              </div>
+          
+            <div id="name">
+         <h3 class="name">Country</h3>
+             <select name="country" id="country" required>
+          <option  selected="selected">Your Country </option>
+          <option value="India">India</option>
+          <option value="Pakistan">Pakistan</option> 
+          <option value="Nepal">Nepal</option>
+           </select>
+         </div>
 
-            
-              <div id="name">
-           <h3 class="name">Country</h3>
-               <select name="country" id="country" required>
-            <option  selected="selected">Your Country </option>
-            <option value="India">India</option>
-            <option value="Pakistan">Pakistan</option> 
-            <option value="Nepal">Nepal</option>
-             </select>
-           </div>
+         <div id="name">
+           <h3 class="name">State</h3>
+           <select name="state" id="state"required>
+              <option  selected="selected">Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Odisha">Odisha</option> 
+              <option value="Bihar">Bihar</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+               </select>
+            </div>  
 
-           <div id="name">
-             <h3 class="name">State</h3>
-             <select name="state" id="state"required>
-                <option  selected="selected">Select State</option>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                <option value="Assam">Assam</option>
-                <option value="Bihar">Bihar</option>
-                <option value="Chandigarh">Chandigarh</option>
-                <option value="Chhattisgarh">Chhattisgarh</option>
-                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-                <option value="Daman and Diu">Daman and Diu</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Lakshadweep">Lakshadweep</option>
-                <option value="Puducherry">Puducherry</option>
-                <option value="Goa">Goa</option>
-                <option value="Gujarat">Gujarat</option>
-                <option value="Haryana">Haryana</option>
-                <option value="Himachal Pradesh">Himachal Pradesh</option>
-                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                <option value="Jharkhand">Jharkhand</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Kerala">Kerala</option>
-                <option value="Madhya Pradesh">Madhya Pradesh</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Manipur">Manipur</option>
-                <option value="Meghalaya">Meghalaya</option>
-                <option value="Mizoram">Mizoram</option>
-                <option value="Nagaland">Nagaland</option>
-                <option value="Odisha">Odisha</option>
-                <option value="Punjab">Punjab</option>
-                <option value="Rajasthan">Rajasthan</option>
-                <option value="Sikkim">Sikkim</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Telangana">Telangana</option>
-                <option value="Tripura">Tripura</option>
-                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                <option value="Uttarakhand">Uttarakhand</option>
-                <option value="West Bengal">West Bengal</option>
-                 </select>
-              </div>  
+               <div id="name">
+               <h3 class="name">Gender</h3>
 
-                 <div id="name">
-                 <h3 class="name">Gender</h3>
+               <div id="radio">
+              <input type="radio" id="male" name="fav_language" value="male">         
+              <label  for="html">MALE</label>
 
-                 <div id="radio">
-                <input type="radio" id="male" name="fav_language" value="male">         
-                <label  for="html">MALE</label>
-
-                <input type="radio" id="female" name="fav_language" value="female">
-               <label   for="css">FEMALE</label>
-              </div>
-               </div>
-                    <div id="name"> 
-                         <label>
-                       <input type="checkbox" checked="checked" id="checkbox" > I agree to KindMeal.my's <span style="color: red">Terms & Conditions</span>
-                      </label>
-                      </div>
+              <input type="radio" id="female" name="fav_language" value="female">
+             <label   for="css">FEMALE</label>
+            </div>
+             </div>
+                  <div id="name"> 
+                       <label>
+                     <input type="checkbox" checked="checked" id="checkbox" required > I agree to KindMeal.my's <span style="color: red">Terms & Conditions</span>
+                    </label>
+                    </div>
 
 
-                      <input id="button" type="submit" value="Join Now">
-                    
-                   
-                  
-                  </form>
-                
+                    <input id="button"  type="submit" value="Set Up My Shop & Deals »">
+
+                </form>
 
          
        </div>
@@ -227,10 +236,8 @@
 
     </div>
 
-
-
     <div id = "lastImg">
-      <img src = "https://www.kindmeal.my/images/how_kindmeal_works.png">
+      <img src = "https://www.kindmeal.my/images/banner_whykindmeal.png">
       <link rel = "stylesheet" href="footer.css">
   </div>
   <div id = "table_container">
@@ -357,14 +364,8 @@
 
 
 
-
-
-
-
   </body>
 </html>
-
-
 
 
 
