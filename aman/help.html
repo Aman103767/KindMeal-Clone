@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(228, 226, 225);
+        }
+
+        #container {
+            display: flex;
+            width: 75%;
+            margin: auto;
+            gap: 35px;
+        }
+
+        #data {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: rgb(251, 252, 252);
+        }
+
+        #img>div {
+            border: 1px solid rgba(175, 169, 169, 0.998);
+            border-radius: 10px;
+            text-align: center;
+            padding: 25px 25px 1px 25px;
+            background-color: rgba(248, 243, 243, 0.902);
+            box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+            margin-bottom: 35px;
+        }
+
+        #img>div:hover {
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: -15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="img">
+
+        </div>
+        <div id="data">
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="help.js"></script>
+<script>
+    helpimg.forEach(function (elem) {
+        var box = document.createElement("div");
+
+        var helpinimg = document.createElement("img");
+        helpinimg.setAttribute("src", elem.img)
+
+        var helpindata = document.createElement("h4");
+        helpindata.innerText = elem.line
+
+        box.append(helpinimg, helpindata);
+        document.querySelector("#img").append(box)
+    })
+
+
+    helpdata.forEach(function (elem) {
+        var boxa = document.createElement("div");
+
+        var helpindata = document.createElement("h3");
+        helpindata.innerText = elem.topic;
+
+        var helpinpara = document.createElement("p")
+        helpinpara.innerText = elem.para;
+
+        var helpinpara2 = document.createElement("p")
+        helpinpara2.innerText = elem.para2
+
+        boxa.append(helpindata, helpinpara, helpinpara2);
+        document.querySelector("#data").append(boxa)
+    })
+
+</script>
