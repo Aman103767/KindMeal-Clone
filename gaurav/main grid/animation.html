@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box ;
+        }
+      body{
+          width: 100%;
+          height: 100vh;
+          display: grid;
+          place-items: center;
+      }
+      .slider{
+          width: 70%;
+          height: 400px;
+          background-image: url("image1.jpeg");
+          background-size: 100% 100% ;
+          animation: changeImage 40s linear infinite;
+      }
+    @keyframes changeImage{
+        0%{
+            background-image: url("image1.jpeg");
+        }
+        18%{
+            background-image: url("image2.jpeg");
+        }
+        36%{
+            background-image: url("image3.jpeg");
+        }
+        52%{
+            background-image: url("image4.jpeg");
+        }
+        68%{
+            background-image: url("image5.jpeg");
+        }
+        84%{
+            background-image: url("image6.jpeg");
+        }
+        100%{
+            background-image: url("image7.jpeg");
+        }
+
+
+    }
+    </style>
+</head>
+<body>
+   <div class="slider"></div> 
+</body>
+</html>
