@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment page</title>
-    <link rel="stylesheet" href="payment.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    
 </head>
 <body>
 
@@ -28,28 +29,22 @@
         </div>
     </div>
   
-     <nav class="navbar">
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Meal Deals</a></li>
-                <li><a href="#">Kind Moments</a></li>
-                <li><a href="#">Hot Picks</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-  
+     
+    <div id = "navbigcon">
+        <div id = "navcon">
+          <div><a href = "index.html">Home</a></div>
+          <div><a href="mealdeal.html">Meal Deals</a></div>
+          <div><a href="#">KindMoments</a></div>
+          <div><a href="#">Hot Picks</a></div>
+          <div><a href="#">Recipes</a></div>
+          <div><a href="map.html">Directory</a></div>
+          <div><a href="#">Articles</a></div>
+          <div><a href="help.html">Help</a></div>
         </div>
-     </nav>
+      </div>
   
   
-
-
-
-
-
+  
 
 
 
@@ -188,23 +183,14 @@
 
                 </div>
                 <input type="submit" value="proceed to checkout" class="submit-btn">
-
+               
+               
             </div>
 
            
             
         
         </form>
-
-
-
-  
-         
-  
-          
-  
-      
-    
   
       </div>
 
@@ -341,4 +327,30 @@
 </body>
 </html>
 
+<script>
+    document.querySelector("form").addEventListener("submit",payment)
+    function payment(){
+        event.preventDefault()
+        alert("Confirm");
+        window.location.href = "end.html";
+    }
+</script>
+
+
+<script>
+    var loginData = JSON.parse(localStorage.getItem("login"));
+    var userdata= JSON.parse(localStorage.getItem("userData"));
+    var name = userdata.userName;
+    console.log(name)
+   var user = document.querySelector("#entry");
+  
+   
+   if(loginData != null){
+     
+   user.innerHTML = `<div id = "lastflex"><div>
+     <a  href="cart.html"><p2><img id = "dimag" src="https://www.kindmeal.my/images/icon_notice.png " alt=""> 
+        </p2></a> <p2>${name} ▼</p2>  <div></div> `
+        }
+ 
+ </script>
 

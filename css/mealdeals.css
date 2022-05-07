@@ -1,8 +1,9 @@
-*
-{
+
+*{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 #bannerimage
 {
@@ -238,3 +239,16 @@
 {
     color:#2874A6
 }
+#dimag{
+ 
+    margin-right: 50px;
+ 
+  
+  
+   }
+   #lastflex{
+     display: flex;
+     justify-content: flex-end;
+    
+     margin-right: 20px;
+   }

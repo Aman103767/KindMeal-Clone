@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        #container{
+            width: 50%;
+            margin: auto;
+            height: auto;
+            margin-top: 40px;
+        }
+        #container>img{
+            width: 100%;
+            height: auto;
+        }
         *{
             box-sizing: border-box;
             padding: 0;
             padding: 0;
+            font-family:sans-serif;
+            font-size: 18px;
+            font-weight: 700;
         }
 
         .container{
@@ -26,7 +40,7 @@
         }
         .btn{
             text-decoration: none;
-            padding: 20px 50px ;
+            padding: 30px 55px ;
             /* background-color: aqua; */
             position: relative;
         }
@@ -35,7 +49,7 @@
     overflow: hidden;
     color: #fff;
     border-radius: 30px;
-     box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255 , 0.5 );
+     box-shadow: 0 0 0 0 rgba(64, 245, 248, 0.5), 0 0 0 0 rgba(39, 255, 143, 0.5);
      transition: transform 0.3 ease, box shadow 0.3s ease ;}
 
      .btn::after{
@@ -60,14 +74,18 @@
           .btn:hover::after{
                transform: rotate(150deg);
           }
+          
 
     </style>
 </head>
 <body>
+    <div id = "container">
+       <img src = "http://www.shikharclasses.in/wp-content/uploads/2020/04/PAYMENT-SUCCESS.png">
+    </div>
     <div class="container">
-    <div class="button">
-      <a href="#" class="btn">Checkout</a>
-    </div>
-    </div>
+        <div class="button">
+          <a href="index.html" class="btn">Return To Home Page</a>
+        </div>
+        </div>
 </body>
 </html>
