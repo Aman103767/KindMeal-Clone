@@ -26,7 +26,7 @@ We have made this project in 5 days.
 
 2.Everyone's mind works differently and so ours. The website given to us was a website of get free coupons. We changed some things in website. Everyone's idea was different. It is very difficult to choose one idea.
 
-3.In our website the cart page was not there so we have create oneghg from scratch. It was very hard to decide which layout should we perfect for cart page.
+3.In our website the cart page was not there so we have create one from scratch. It was very hard to decide which layout should we perfect for cart page.
 
 4.Another problem was to merge all of the files in a proper sequence which was again a difficult task for us because while merging and connecting all the pages some of the pages had the same name, and while running the site it was redirecting to some other pages so it was difficult to find the location and to rename the file.
 
