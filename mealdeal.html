@@ -1381,6 +1381,9 @@
         var box=document.createElement("div")
         
 
+        var imagebox=document.createElement("div")
+        imagebox.setAttribute("class","imagebox")
+
         var productImg=document.createElement("img")
         productImg.setAttribute("src",elem.productImg)
         productImg.setAttribute("class","productImg")
@@ -1393,16 +1396,21 @@
         productname.innerText=elem.productName
         productname.setAttribute("class","productname")
 
+        imagebox.append(productImg,productname, discounttop)
+
         var databox=document.createElement("div")
         databox.setAttribute("class","databox")
 
         var cafeName=document.createElement("h3")
         cafeName.innerText=elem.cafeName
         cafeName.style.display="inline-block"
+        cafeName.setAttribute("class","cafename")
+       
 
         var location=document.createElement("p")
         location.innerText=elem.location
         location.style.display="inline-block"
+       
 
         var para=document.createElement("p")
         para.innerText=elem.para
@@ -1484,7 +1492,7 @@
         
         discountbox.append(box1,box2,box3)
 
-        box.append(productImg,productname, discounttop,databox,discountbox)
+        box.append(imagebox,databox,discountbox)
         document.querySelector(".container").append(box)
        })
            
@@ -1692,6 +1700,7 @@
 
   function addtocart(elem)
   {
+    alert("Item added Successfully") 
    cartarray.push(elem)
    localStorage.setItem("cartdata",JSON.stringify(cartarray))
   }
