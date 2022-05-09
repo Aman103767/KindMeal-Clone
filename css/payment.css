@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+   
+}
+
+
+
+#container{
+
+    margin: auto;
+    width: 80%;
+    height: auto;
+    
+    /* border: 1px solid black; */
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#left_box{
+
+   height: auto;
+  
+   width: 25%
+   
+    /* border: 1px solid red; */
+} 
+
+#left_box>div{
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 8px;
+  padding-top: 30px;
+  
+  
+}
+#left_box>div>img{
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    cursor: pointer;
+    
+}
+#left_box>div>p{
+
+    /* margin-left: 37px; */
+    color: #666666;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.box_3>ul{
+    margin: auto;
+    color: #666666;
+    margin-left: 22px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+}
+.box_3>p{
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    margin-top: 6px;
+    
+
+}
+
+.box_3>h2{
+    margin-left: 37px;
+    color: #605d5d;
+    font-size: 21px;
+}
+
+#left_box>.box_3{
+    height: 240px;
+
+}
+
+h1+p{
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+
+
+
+#right_box{
+    display: flex;
+    height: 600px;
+    width: auto;
+    font-family:'Poppins', sans-serif ;
+    margin: auto;
+    /* margin-top: 30px; */
+    box-sizing: border-box;
+    /* outline: none; border: none;
+    text-transform: capitalize; */
+    /* transition: all .2s linear; */
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    min-height: 100vh;
+    /* background: linear-gradient(90deg, #2ecc71 70%, #27ae60 40.1%); */
+    padding-bottom: 30px;
+    
+  
+}
+
+
+#right_box form{
+    padding: 20px;
+    width: auto;
+}
+
+#right_box form .row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+
+}
+
+#right_box form .row .col{
+    flex:1 1 250px;
+    
+
+}
+
+#right_box form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#right_box form .row .col .inputBox{
+margin: 20px 0;
+/* display: flex; */
+}
+
+#right_box form .row .col .inputBox span{
+    margin-bottom: 2px;
+    display: block;
+    font-size: 13.5px;
+    color: #333;
+}
+
+#right_box form .row .col .inputBox input{
+    width: 60%;
+    border: 0.5px solid #ccc;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-transform: none;
+}
+
+#right_box form .row .col .inputBox input:focus{
+    border: 4px solid #000;
+
+}
+
+#right_box form .row .col .flex{
+    display: flex;
+    width: 73%;
+    gap: 10px;
+}
+#right_box form .row .col .inputBox{
+    margin-top: 5px;
+} 
+
+#right_box form .row .col .inputBox .image{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+
+}
+
+#right_box form .submit-btn{
+    width: 80%;
+    margin: auto;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 3px;
+    
+    border: #27ae60 1px solid;
+    color: #27ae60;
+
+    margin-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#right_box form .submit-btn:hover{
+    background: #41cc7b;
+    color: white;
+}
+#dimag{
+ 
+    margin-right: 50px;
+   
+  
+   }
+   #lastflex{
+     display: flex;
+     justify-content: flex-end;
+     height: 50px;
+     margin-right: 20px;
+   }
+
+
+
+
+
+
+
+
+
