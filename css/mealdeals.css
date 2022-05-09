@@ -1,8 +1,9 @@
-*
-{
+
+*{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 #bannerimage
 {
@@ -54,7 +55,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display:flex;
     flex-direction: column;
-    position: relative;
+   
     overflow: hidden;
    
 }
@@ -201,7 +202,7 @@
     font-size: 20px;
     font-weight: bold;
     position:absolute;
-   top:288px;
+   bottom:0px;
    background-color: rgb(0, 0, 0,0.5);
    
   
@@ -238,3 +239,28 @@
 {
     color:#2874A6
 }
+#dimag{
+ 
+    margin-right: 50px;
+ 
+  
+  
+   }
+   #lastflex{
+     display: flex;
+     justify-content: flex-end;
+    
+     margin-right: 20px;
+   }
+    
+   .imagebox
+   {
+       width:100%;
+       position:relative
+       
+
+   }
+   .cafename
+   {
+       margin-right: 20px;
+   }

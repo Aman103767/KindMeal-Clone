@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="sorting.css">
-    <link rel="stylesheet" href="mealdeals.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./css/sorting.css">
+    <link rel="stylesheet" href="./css/mealdeals.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
    
 </head>
 <body>
@@ -29,21 +29,19 @@
         </div>
     </div>
  
-     <nav class="navbar">
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Meal Deals</a></li>
-                <li><a href="#">Kind Moments</a></li>
-                <li><a href="#">Hot Picks</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
- 
+    
+    <div id = "navbigcon">
+        <div id = "navcon">
+          <div><a href = "index.html">Home</a></div>
+          <div><a href="mealdeal.html">Meal Deals</a></div>
+          <div><a href="#">KindMoments</a></div>
+          <div><a href="#">Hot Picks</a></div>
+          <div><a href="#">Recipes</a></div>
+          <div><a href="map.html">Directory</a></div>
+          <div><a href="#">Articles</a></div>
+          <div><a href="help.html">Help</a></div>
         </div>
-     </nav>
+      </div>
 <!-- Navbar -->
 
   <!-- Sorting Section -->
@@ -113,10 +111,12 @@
 
 
 
-
- <div id = "lastImg">
-    <img src = "https://www.kindmeal.my/images/banner_whykindmeal.png">
+<div id = "powerimg">
+    <div id = "lastImg">
+        <img src = "https://www.kindmeal.my/images/banner_whykindmeal.png">
+    </div>
 </div>
+ 
 
 
 <div id = "table_container">
@@ -1381,6 +1381,9 @@
         var box=document.createElement("div")
         
 
+        var imagebox=document.createElement("div")
+        imagebox.setAttribute("class","imagebox")
+
         var productImg=document.createElement("img")
         productImg.setAttribute("src",elem.productImg)
         productImg.setAttribute("class","productImg")
@@ -1393,16 +1396,21 @@
         productname.innerText=elem.productName
         productname.setAttribute("class","productname")
 
+        imagebox.append(productImg,productname, discounttop)
+
         var databox=document.createElement("div")
         databox.setAttribute("class","databox")
 
         var cafeName=document.createElement("h3")
         cafeName.innerText=elem.cafeName
         cafeName.style.display="inline-block"
+        cafeName.setAttribute("class","cafename")
+       
 
         var location=document.createElement("p")
         location.innerText=elem.location
         location.style.display="inline-block"
+       
 
         var para=document.createElement("p")
         para.innerText=elem.para
@@ -1484,7 +1492,7 @@
         
         discountbox.append(box1,box2,box3)
 
-        box.append(productImg,productname, discounttop,databox,discountbox)
+        box.append(imagebox,databox,discountbox)
         document.querySelector(".container").append(box)
        })
            
@@ -1692,12 +1700,30 @@
 
   function addtocart(elem)
   {
-     
+    alert("Item added Successfully") 
    cartarray.push(elem)
    localStorage.setItem("cartdata",JSON.stringify(cartarray))
   }
 
      
         
+
+</script>
+
+   <script>
+   var loginData = JSON.parse(localStorage.getItem("login"));
+   var userdata= JSON.parse(localStorage.getItem("userData"));
+   var name = userdata.userName;
+   console.log(name)
+  var user = document.querySelector("#entry");
+ 
+  
+  if(loginData != null){
+    
+  user.innerHTML = `<div id = "lastflex"><div> <a  href="cart.html"><p2><img id = "dimag" src="https://www.kindmeal.my/images/icon_notice.png " alt=""> </p2></a> <p2>${name} ▼</p2>  <div></div>`
+  
+
+      
+       }
 
 </script>
