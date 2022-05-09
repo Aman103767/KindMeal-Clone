@@ -1,0 +1,317 @@
+body {
+    margin: 0px;
+     padding: 0px;
+     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   }
+   #logo, #sm, #entry{
+     /* border: 1px solid black; */
+     height: 90px;
+     width: 35%;
+     margin-top: 5px;
+     /* display: flex; */
+   
+   }
+   #entry>div>img{
+      
+       width:60px;
+       height: auto;
+   }
+   #entry{
+       
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+  
+   
+   #sm img{
+     /* border: 1px solid green; */
+     height: 50%;
+     margin-top: 25px;
+     margin-left: 10px;
+     
+   }
+   
+   #sm a:nth-child(1){
+     margin-left: 100px;
+     
+   }
+   .header{
+     /* border: 1px solid red; */
+     width: 80%;
+     height: 100px;
+     margin: auto;
+     display: flex;
+   }
+   #topp {
+    display: flex;
+    width: 1500px;
+    height: 110px;
+    margin: auto;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+  }
+  #topp > div {
+    text-align: center;
+  }
+  #h41 > h4 {
+    font-weight: bold;
+    margin-left: 150px;
+    
+  }
+  #bigcontainer{
+      width: 80%;
+     
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+  }
+ 
+  #container {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    margin-bottom: 45px;
+    height: 45px;
+    align-content: center;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+    border-radius:10px;
+    
+  }
+  #container > div {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    font-size : 15px;
+    color: #999999;
+  
+   
+  }
+
+  #container > div:nth-child(1) {
+    margin-left:10px;
+    
+  }
+  #container > div:nth-child(2) {
+    margin-left:325px;
+  }
+  
+  #container > div:nth-child(3) {
+    margin-left:80px ;
+  }
+  
+  #container > div:nth-child(4) {
+    margin-left: 80px;
+  }
+  
+  #container > div:nth-child(5) {
+    margin-left: 60px;
+  }
+  #totalcontainer{
+      width: 27%;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      border-radius: 10px;
+      
+      padding : 20px;
+      margin-left: 10px;
+      height: 420px;
+  }
+  #price_flex{
+      display: flex;
+      justify-content: space-between;
+  }
+  #coupon_flex{
+      display:flex;
+      justify-content: space-between;
+     
+
+  }
+  /* #coupon_flex>button{
+      padding: 8px 13px 8px 13px;
+      background-color: gray;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      
+  } */
+  #checkout{
+      width: 100%;
+      height: 45px;
+      margin-top: 20px;
+      background-color: green;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      font-weight: bolder;
+
+  }
+  #checkout:hover{
+    background-color: rgb(97, 195, 163);
+    cursor: pointer;
+  }
+  #acceptpay{
+      width: 100%;
+      height: auto;
+      margin-top: -15px;
+    
+  }
+  
+#acceptpay>img{
+width: 100%;
+height: auto;
+
+
+}
+#paradis{
+    font-size: 13.6px;
+    margin-top:3px;
+}
+#cart {
+   width: auto;
+    margin: auto;
+  }
+  
+  #imgCon{
+    width: 100px;
+    height: auto;
+  }
+  #imgIn{
+    width: 100%;
+  }
+  th,
+td {
+  padding: 25px;
+}
+
+/* Gautam's CSS */
+#imgCon {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+#imgIn {
+  height: auto;
+  width:90%;
+  padding: 15px;
+   
+}
+#name {
+  font-size: 14px;
+  width: 550px;
+}
+
+/* td {
+  border: 1px solid red;
+} */
+#body > tr {
+  margin-bottom: 30px;
+}
+
+.spaceBetweenTd > td {
+  box-sizing: border-box;
+}
+#divQ {
+  display: flex;
+}
+
+.incdc {
+  height: 30px;
+  width: 30px;
+  border: 0;
+  background-color: white;
+  border: 1px solid #e9e9e9;
+  color: #081442;
+}
+#qunt {
+  margin: 0;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e9e9e9;
+  color: #081442;
+  font-size: 17px;
+}
+#delete{
+  padding: 8px 13px 8px 13px;
+  border-radius: 10px;
+   color: #999999;
+   font-weight: bolder;
+   background-color: white;
+   border-color:red;
+   color:red;
+   border: 1px solid red;
+}
+#delete:hover{
+  background-color:red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#Apply{
+  padding: 8px 13px 8px 13px;
+  border-radius: 10px;
+   color: #999999;
+   font-weight: bolder;
+   background-color: white;
+   border-color:green;
+   border: 1px solid green;
+   color: green;
+  
+}
+#Apply:hover{
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+ 
+}
+#promo{
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid gray;
+  font-weight: bolder;
+}
+  #hovertorow:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+    
+  }
+  #hovertorow:focus{
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 0px 1px;
+  }
+  #disc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+
+  }
+  #realp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px
+    
+  }
+  #discount{
+    font-weight: 400;
+    font-size: 16px;
+    color: green;
+    
+  }
+  #paradis{
+    font-size: 13px;
+  }
+  #dimag{
+    margin-right: 40px;
+    margin-top: -10px;
+   
+  }#lastflex{
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  
