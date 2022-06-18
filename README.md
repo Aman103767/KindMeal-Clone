@@ -1,5 +1,5 @@
-# Clone of kindmeal.com
-kindmeal.com website was our project for Unit-2 Construct week at Masai School.
+# Clone of asos.com
+asos.com website was our project for Unit-3 Construct week at Masai School.
 We have made this project in 5 days.
 
 
@@ -12,12 +12,9 @@ We have made this project in 5 days.
 ## Features
 
 -Login and signin page
--Carouse for home page
--Filters of Custom price
 -Sorting for price and search bar
--Manual and automatic slider for home page
 -Add to cart opt for adding items
--Increment and Decrement Number of person according to that price is also changes
+-Increment and Decrement quantity according to that price is also changes
 -Discount price after applying coupon
 
 # Challenges we face during Construct week
@@ -36,12 +33,11 @@ We have made this project in 5 days.
 ## Team
 
 -Aman Sharma
--Sandeep Sharma
--Gaurav Mishra
--Vijay yadav
--Hrusikesh Ghandei
--Saurabh Kumar
-
+-Adarsh Khatri
+-Shashank Sinha
+-Manoj Tryambak Gajare
+-Radhe Shyam Soni
+-Pallavi Arvind Bobale
 
 ## Authors
 
