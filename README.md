@@ -1,6 +1,7 @@
 # Clone of kindmeal.com
 kindmeal.com website was our project for Unit-2 Construct week at Masai School.
-We have made this project in 5 days.
+We have made this project in 5 days.<br />
+***Our clone website - (https://keen-pasca-121c61.netlify.app/index.htm)***
 
 
 # Tech Stack
