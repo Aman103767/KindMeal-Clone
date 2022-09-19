@@ -40,7 +40,6 @@ We have made this project in 5 days.<br />
 -Sandeep Sharma
 -Gaurav Mishra
 -Vijay yadav
--Hrusikesh Ghandei
 -Saurabh Kumar
 
 
